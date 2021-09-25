@@ -117,7 +117,7 @@ final class NestedKeyTests: XCTestCase {
     }
     
     func test_normalKeys_encoding() throws {
-        let user = try JSONDecoder().decode(NotNestedUser.self, from: makeJSONData())
+        let user: NotNestedUser = try makeJSONData().decoded()
         let encoder = JSONEncoder()
         
         measure {
@@ -128,7 +128,7 @@ final class NestedKeyTests: XCTestCase {
     }
     
     func test_nestedKeys_encoding() throws {
-        let user = try JSONDecoder().decode(User.self, from: makeJSONData())
+        let user: User = try makeJSONData().decoded()
         let encoder = JSONEncoder()
         
         measure {

@@ -114,7 +114,7 @@ func test_codableWithConfiguration() {
         }
         """
         let data = json.data(using: .utf8)!
-        let friendsViewModel = try JSONDecoder().decode(FriendsViewModel.self, from: data)
+        let friendsViewModel: FriendsViewModel = try data.decoded()
         print(friendsViewModel.friends)
     } catch {
         print(error)

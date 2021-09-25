@@ -24,7 +24,7 @@ extension LossyCodableArray: Decodable where Element: Decodable {
 
         init(from decoder: Decoder) throws {
             let container = try decoder.singleValueContainer()
-            element = try? container.decode(Element.self)
+            element = try? container.decode()
         }
     }
 

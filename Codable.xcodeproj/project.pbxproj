@@ -127,7 +127,7 @@
 				2048A5B426FF5D9C00A2E4AD /* LossyCodableArray.swift */,
 				2048A5B826FF5DEA00A2E4AD /* CodableWithConfiguration.swift */,
 				2048A5C726FF673800A2E4AD /* FailableDecodable.swift */,
-				2048A5B326FF5D7300A2E4AD /* Value Transforming */,
+				2048A5B326FF5D7300A2E4AD /* ValueTransforming */,
 				2048A5BA26FF5DFB00A2E4AD /* Migration */,
 			);
 			path = Codable;
@@ -141,7 +141,7 @@
 			path = CodableTests;
 			sourceTree = "<group>";
 		};
-		2048A5B326FF5D7300A2E4AD /* Value Transforming */ = {
+		2048A5B326FF5D7300A2E4AD /* ValueTransforming */ = {
 			isa = PBXGroup;
 			children = (
 				2048A5AB26FF5D0D00A2E4AD /* StringBacked.swift */,
@@ -149,7 +149,7 @@
 				2048A5B626FF5DD900A2E4AD /* DecodableDefault.swift */,
 				2048A5CC26FF6EFA00A2E4AD /* DefaultCodable.swift */,
 			);
-			path = "Value Transforming";
+			path = ValueTransforming;
 			sourceTree = "<group>";
 		};
 		2048A5BA26FF5DFB00A2E4AD /* Migration */ = {

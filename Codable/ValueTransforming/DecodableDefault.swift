@@ -26,7 +26,7 @@ extension DecodableDefault {
 extension DecodableDefault.Wrapper: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
-        wrappedValue = try container.decode(Value.self)
+        wrappedValue = try container.decode()
     }
 }
 

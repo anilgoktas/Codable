@@ -51,6 +51,14 @@ extension KeyedDecodingContainer {
     
 }
 
+extension SingleValueDecodingContainer {
+    
+    func decode<T: Decodable>() throws -> T {
+        try decode(T.self)
+    }
+    
+}
+
 extension Encodable {
     
     func encoded(encoder: JSONEncoder = .init()) throws -> Data {

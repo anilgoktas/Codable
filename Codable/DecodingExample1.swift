@@ -24,14 +24,14 @@ struct RedditPost: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let innerContainer = try container.nestedContainer(keyedBy: RedditPostKeys.self, forKey: .data)
-        self.title = try innerContainer.decode(String.self, forKey: .title)
-        self.score = try innerContainer.decode(Int.self, forKey: .score)
+        self.title = try innerContainer.decode(forKey: .title)
+        self.score = try innerContainer.decode(forKey: .score)
     }
 }
 
 struct RedditPostListing: Decodable {
     enum CodingKeys: String, CodingKey {
-        case data // you only need to assign a string value here if the value is different
+        case data
     }
 
     enum ChildrenCodingKeys: String, CodingKey {
@@ -43,7 +43,7 @@ struct RedditPostListing: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let data = try container.nestedContainer(keyedBy: ChildrenCodingKeys.self, forKey: .data)
-        self.children = try data.decode([RedditPost].self, forKey: .children)
+        self.children = try data.decode(forKey: .children)
     }
 }
 
@@ -66,11 +66,10 @@ func test_decodingExample1() {
         }
     }
     """
-    let data = json.data(using: .utf8)
-    let decoder = JSONDecoder()
+    let data = json.data(using: .utf8)!
     
     do {
-        let listing = try decoder.decode(RedditPostListing.self, from: data!)
+        let listing: RedditPostListing = try data.decoded()
         print(listing.children)
     } catch {
         print(error)
