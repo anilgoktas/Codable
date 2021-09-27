@@ -74,3 +74,11 @@ extension Data {
     }
     
 }
+
+extension JSONDecoder {
+    
+    func decode<T: Decodable>(from data: Data) throws -> T {
+        try decode(T.self, from: data)
+    }
+    
+}

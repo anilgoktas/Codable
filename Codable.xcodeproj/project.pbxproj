@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		202F2CDB2701E28C00D9E5EE /* CustomKeyDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202F2CDA2701E28C00D9E5EE /* CustomKeyDecodingStrategy.swift */; };
 		202F2CDD2701E2EA00D9E5EE /* AnyCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202F2CDC2701E2EA00D9E5EE /* AnyCodingKey.swift */; };
+		202F2CDF2701EAA200D9E5EE /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202F2CDE2701EAA200D9E5EE /* UserInfo.swift */; };
 		2048A57026FF5BEB00A2E4AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048A56F26FF5BEB00A2E4AD /* AppDelegate.swift */; };
 		2048A57226FF5BEB00A2E4AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048A57126FF5BEB00A2E4AD /* SceneDelegate.swift */; };
 		2048A57426FF5BEB00A2E4AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048A57326FF5BEB00A2E4AD /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		202F2CDA2701E28C00D9E5EE /* CustomKeyDecodingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyDecodingStrategy.swift; sourceTree = "<group>"; };
 		202F2CDC2701E2EA00D9E5EE /* AnyCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodingKey.swift; sourceTree = "<group>"; };
+		202F2CDE2701EAA200D9E5EE /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		2048A56C26FF5BEB00A2E4AD /* Codable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2048A56F26FF5BEB00A2E4AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2048A57126FF5BEB00A2E4AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				2048A57A26FF5BEC00A2E4AD /* LaunchScreen.storyboard */,
 				2048A57D26FF5BEC00A2E4AD /* Info.plist */,
 				2048A59F26FF5C2C00A2E4AD /* Extensions.swift */,
+				202F2CDE2701EAA200D9E5EE /* UserInfo.swift */,
 				202F2CDC2701E2EA00D9E5EE /* AnyCodingKey.swift */,
 				2048A5A726FF5CC700A2E4AD /* SwiftyJSON.swift */,
 				2048A5A926FF5CF800A2E4AD /* Enum.swift */,
@@ -287,6 +290,7 @@
 				2048A5C826FF673800A2E4AD /* FailableDecodable.swift in Sources */,
 				2048A5CD26FF6EFA00A2E4AD /* DefaultCodable.swift in Sources */,
 				2048A5AA26FF5CF800A2E4AD /* Enum.swift in Sources */,
+				202F2CDF2701EAA200D9E5EE /* UserInfo.swift in Sources */,
 				2048A57226FF5BEB00A2E4AD /* SceneDelegate.swift in Sources */,
 				2048A5A826FF5CC700A2E4AD /* SwiftyJSON.swift in Sources */,
 				2048A5B026FF5D5100A2E4AD /* NestedKey.swift in Sources */,
