@@ -34,6 +34,7 @@
 		2048A5C826FF673800A2E4AD /* FailableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048A5C726FF673800A2E4AD /* FailableDecodable.swift */; };
 		2048A5CB26FF6EDB00A2E4AD /* DefaultCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 2048A5CA26FF6EDB00A2E4AD /* DefaultCodable */; };
 		2048A5CD26FF6EFA00A2E4AD /* DefaultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048A5CC26FF6EFA00A2E4AD /* DefaultCodable.swift */; };
+		205E25212703146400E23EE1 /* CustomDateDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205E25202703146400E23EE1 /* CustomDateDecodingStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		2048A5BF26FF5E2E00A2E4AD /* NestedKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedKeyTests.swift; sourceTree = "<group>"; };
 		2048A5C726FF673800A2E4AD /* FailableDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableDecodable.swift; sourceTree = "<group>"; };
 		2048A5CC26FF6EFA00A2E4AD /* DefaultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCodable.swift; sourceTree = "<group>"; };
+		205E25202703146400E23EE1 /* CustomDateDecodingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateDecodingStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,11 +133,11 @@
 				2048A5A726FF5CC700A2E4AD /* SwiftyJSON.swift */,
 				2048A5A926FF5CF800A2E4AD /* Enum.swift */,
 				2048A5AD26FF5D3900A2E4AD /* DecodingExample1.swift */,
-				202F2CDA2701E28C00D9E5EE /* CustomKeyDecodingStrategy.swift */,
 				2048A5AF26FF5D5100A2E4AD /* NestedKey.swift */,
 				2048A5B426FF5D9C00A2E4AD /* LossyCodableArray.swift */,
 				2048A5B826FF5DEA00A2E4AD /* CodableWithConfiguration.swift */,
 				2048A5C726FF673800A2E4AD /* FailableDecodable.swift */,
+				205E251F2703144700E23EE1 /* DecodingStrategy */,
 				2048A5B326FF5D7300A2E4AD /* ValueTransforming */,
 				2048A5BA26FF5DFB00A2E4AD /* Migration */,
 			);
@@ -168,6 +170,15 @@
 				2048A5BD26FF5E1300A2E4AD /* MerowingVersioning.swift */,
 			);
 			path = Migration;
+			sourceTree = "<group>";
+		};
+		205E251F2703144700E23EE1 /* DecodingStrategy */ = {
+			isa = PBXGroup;
+			children = (
+				202F2CDA2701E28C00D9E5EE /* CustomKeyDecodingStrategy.swift */,
+				205E25202703146400E23EE1 /* CustomDateDecodingStrategy.swift */,
+			);
+			path = DecodingStrategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 				2048A5B026FF5D5100A2E4AD /* NestedKey.swift in Sources */,
 				2048A5BE26FF5E1300A2E4AD /* MerowingVersioning.swift in Sources */,
 				202F2CDD2701E2EA00D9E5EE /* AnyCodingKey.swift in Sources */,
+				205E25212703146400E23EE1 /* CustomDateDecodingStrategy.swift in Sources */,
 				202F2CDB2701E28C00D9E5EE /* CustomKeyDecodingStrategy.swift in Sources */,
 				2048A5BC26FF5E0600A2E4AD /* ManualMigration.swift in Sources */,
 				2048A5B726FF5DD900A2E4AD /* DecodableDefault.swift in Sources */,
