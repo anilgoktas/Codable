@@ -7,9 +7,12 @@
 
 import Foundation
 
+// Another resource: https://www.andyibanez.com/posts/the-mysterious-codablewithconfiguration-protocol/
+
 /// - Note: [Source](https://twitter.com/PDucks32/status/1415131799584313345/photo/1)
-/// available iOS 15
+/// Available with iOS 15
 func test_codableWithConfiguration() {
+    
     struct UserCodableConfiguration {
         let codingKeys: Set<User.CodingKeys>
         // We can also add pre or post configurations as well.

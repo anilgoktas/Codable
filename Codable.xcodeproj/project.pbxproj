@@ -35,6 +35,8 @@
 		2048A5CB26FF6EDB00A2E4AD /* DefaultCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 2048A5CA26FF6EDB00A2E4AD /* DefaultCodable */; };
 		2048A5CD26FF6EFA00A2E4AD /* DefaultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048A5CC26FF6EFA00A2E4AD /* DefaultCodable.swift */; };
 		205E25212703146400E23EE1 /* CustomDateDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205E25202703146400E23EE1 /* CustomDateDecodingStrategy.swift */; };
+		20D0CB1D2848ECF000514818 /* OptionalURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0CB1C2848ECF000514818 /* OptionalURL.swift */; };
+		20D0CB1F2848FB9100514818 /* ComplexEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0CB1E2848FB9100514818 /* ComplexEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		2048A5C726FF673800A2E4AD /* FailableDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableDecodable.swift; sourceTree = "<group>"; };
 		2048A5CC26FF6EFA00A2E4AD /* DefaultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCodable.swift; sourceTree = "<group>"; };
 		205E25202703146400E23EE1 /* CustomDateDecodingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateDecodingStrategy.swift; sourceTree = "<group>"; };
+		20D0CB1C2848ECF000514818 /* OptionalURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalURL.swift; sourceTree = "<group>"; };
+		20D0CB1E2848FB9100514818 /* ComplexEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,12 +135,11 @@
 				202F2CDE2701EAA200D9E5EE /* UserInfo.swift */,
 				202F2CDC2701E2EA00D9E5EE /* AnyCodingKey.swift */,
 				2048A5A726FF5CC700A2E4AD /* SwiftyJSON.swift */,
-				2048A5A926FF5CF800A2E4AD /* Enum.swift */,
 				2048A5AD26FF5D3900A2E4AD /* DecodingExample1.swift */,
 				2048A5AF26FF5D5100A2E4AD /* NestedKey.swift */,
-				2048A5B426FF5D9C00A2E4AD /* LossyCodableArray.swift */,
 				2048A5B826FF5DEA00A2E4AD /* CodableWithConfiguration.swift */,
-				2048A5C726FF673800A2E4AD /* FailableDecodable.swift */,
+				20D0CB202848FB9900514818 /* Enum */,
+				20D0CB1B2848DF1B00514818 /* FailureHandling */,
 				205E251F2703144700E23EE1 /* DecodingStrategy */,
 				2048A5B326FF5D7300A2E4AD /* ValueTransforming */,
 				2048A5BA26FF5DFB00A2E4AD /* Migration */,
@@ -179,6 +182,25 @@
 				205E25202703146400E23EE1 /* CustomDateDecodingStrategy.swift */,
 			);
 			path = DecodingStrategy;
+			sourceTree = "<group>";
+		};
+		20D0CB1B2848DF1B00514818 /* FailureHandling */ = {
+			isa = PBXGroup;
+			children = (
+				2048A5B426FF5D9C00A2E4AD /* LossyCodableArray.swift */,
+				2048A5C726FF673800A2E4AD /* FailableDecodable.swift */,
+				20D0CB1C2848ECF000514818 /* OptionalURL.swift */,
+			);
+			path = FailureHandling;
+			sourceTree = "<group>";
+		};
+		20D0CB202848FB9900514818 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				2048A5A926FF5CF800A2E4AD /* Enum.swift */,
+				20D0CB1E2848FB9100514818 /* ComplexEnum.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D0CB1F2848FB9100514818 /* ComplexEnum.swift in Sources */,
 				2048A57426FF5BEB00A2E4AD /* ViewController.swift in Sources */,
 				2048A57026FF5BEB00A2E4AD /* AppDelegate.swift in Sources */,
 				2048A5B526FF5D9C00A2E4AD /* LossyCodableArray.swift in Sources */,
@@ -304,6 +327,7 @@
 				202F2CDF2701EAA200D9E5EE /* UserInfo.swift in Sources */,
 				2048A57226FF5BEB00A2E4AD /* SceneDelegate.swift in Sources */,
 				2048A5A826FF5CC700A2E4AD /* SwiftyJSON.swift in Sources */,
+				20D0CB1D2848ECF000514818 /* OptionalURL.swift in Sources */,
 				2048A5B026FF5D5100A2E4AD /* NestedKey.swift in Sources */,
 				2048A5BE26FF5E1300A2E4AD /* MerowingVersioning.swift in Sources */,
 				202F2CDD2701E2EA00D9E5EE /* AnyCodingKey.swift in Sources */,

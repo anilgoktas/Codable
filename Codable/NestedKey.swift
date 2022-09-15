@@ -9,7 +9,7 @@ import Foundation
 
 /// - Note: [Source](https://twitter.com/IanKay/status/1293952365205184513)
 /// [Other Source](https://gist.github.com/IanKeen/9e77041c386cd5ba0128330d6149c5a4)
-/// Nested for loops are very slow. Check `NestedKeyTests` for comparison.
+/// - Warning: Nested `for` loops are very slow. Check `NestedKeyTests` for comparison.
 public protocol NestedCodingKey: CodingKey {
     var nestedKeys: [String] { get }
 }

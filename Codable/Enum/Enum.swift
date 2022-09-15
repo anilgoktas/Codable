@@ -7,6 +7,11 @@
 
 import Foundation
 
+// Resources
+// https://sarunw.com/posts/codable-synthesis-for-enums-with-associated-values-in-swift/
+// https://sarunw.com/posts/how-to-customize-automatic-synthesizing-codable-for-enums-with-associated-values/
+// https://onmyway133.com/posts/how-to-not-encode-with-enum-key-in-swift/
+
 /// - Note: [Source](https://www.swiftbysundell.com/articles/codable-synthesis-for-swift-enums/#associated-values)
 func test_enumAssociatedValues() {
     enum Video: Codable {

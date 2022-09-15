@@ -33,7 +33,7 @@ extension Complex: Versionable {
         case .v1:
             return .none
         case .v2:
-            return .migrate {  payload in
+            return .migrate { payload in
                 payload["text"] = "defaultText"
             }
         case .v3:
